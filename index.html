@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(160, 151, 156);
+        }
+        header{
+            display: flex;
+            background-color: rgb(107, 83, 90);
+            width: 100%;
+            justify-content: flex-end;
+        }
+        li{
+            display: inline;
+            list-style: none;
+            margin: 1rem;
+        }
+        a{
+            text-decoration: none;
+            color: cornsilk;
+            padding: 1rem;
+        }
+        a:hover{
+            background-color: rgb(201, 176, 171);
+        }
+        
+        .main{
+            width: 60%;
+            height: 12rem;
+            margin:  10rem auto;
+            border: 1.5rem solid rgb(140, 106, 116);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            outline: .8rem solid rgb(201, 176, 171);
+            outline-offset: -1rem;
+            background-color: rgb(210,210,210);
+            font-size: 2rem;
+
+        }
+        .p2{
+            display: none;
+        }
+        img{
+            width: 40%;
+            display: none;
+        }
+        @media screen  and (max-width: 1000px){
+            body{
+                background-color: rgb(223, 162, 80);
+            }
+            header{
+                background-color: rgb(128, 122, 122);
+            }
+            a:hover{
+                background-color: rgb(202, 192, 192);
+                color: black;
+            }
+            .main{
+                border: 1.5rem solid rgb(111, 51, 35);
+                outline-color: rgb(186, 87, 46);
+            }
+        }
+        @media screen  and (max-width: 800px){
+            body{
+                background-color: rgb(166, 193, 184);
+            }
+            header{
+                background-color: rgb(220, 128, 100);
+            }
+            a:hover{
+                background-color: rgb(229, 174, 113);
+                color: black;
+            }
+            .main{
+                border: 1rem solid rgb(200, 96, 99);
+                outline: .3rem solid rgb(200, 96, 99);
+                outline-offset: 1rem;
+                padding: 0.8rem;
+            }
+        }
+        @media screen  and (max-width: 600px){
+            body{
+                background-color: rgb(219, 214, 200);
+            }
+            header{
+                background-color: rgb(111, 122, 78);
+                justify-content: center;
+            }
+            a:hover{
+                background-color: rgb(224, 221, 131);
+                color: black;
+
+            }
+            .main{
+                border: .5rem solid rgb(129, 132, 66);
+                outline: none;
+                padding: 0.8rem;
+                color: rgb(224, 221, 26);
+                background-color: cornsilk; 
+            }
+            .p1{
+                display: none;
+            }
+            .p2{
+                display: block;
+            }
+            li{
+                display: block;
+            }
+            a{
+                font-size: larger;
+                padding: 1rem 10rem;
+            }
+            img{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+       <ul>
+           <li><a href="#">Home</a></li>
+           <li><a href="#">About</a></li>
+           <li><a href="#">Products</a></li>
+           <li><a href="#">Contact</a></li>
+       </ul>
+    </header>
+    <div class="main">
+        <p class="p1">First make me smaller, then lost me!</p>
+        <p class="p2">Did you realize, you made a magic!</p>
+        <img src="./1669438.png" alt="img">
+    </div>
+</body>
+</html>
